@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Nicolás Aguilar - nicktify | Home </title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta property="og:image" content=""/>
+	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Nicolás Aguilar - nicktify" />
+	<meta property="og:title" content="Nicolás Aguilar - nicktify" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Nicolás Aguilar - nicktify"/>
+<meta name="twitter:description" content=""/>
+<script src="/js/feather.min.js"></script>
+	
+	
+        <link href="/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)"  />
+	
+
+	
+	
+		<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+	
+		
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script>
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+	
+	
+</head>
+
+	<body>
+		<div class="content">
+			<header>
+	<div class="main">
+		<a href="/">Nicolás Aguilar - nicktify</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+			
+			<main class="list">
+				<div class="site-description"><p>Full Stack Developer - Data Engineer - AI Engineer student</p></div>
+				
+				
+				
+				<section class="list-item">
+					<h1 class="title"><a href="/posts/create-a-simple-lambda-function/">Create a Simple Lambda Function</a></h1>
+					<time>Feb 25, 2024</time>
+					<br><div class="description">
+	
+	Create a Lambda Function import json import boto3 def lambda_handler(event, context): # TODO implement return { &#39;statusCode&#39;: 200, &#39;body&#39;: json.dumps(&#39;Hello from Lambda!&#39;) } Create the template.yaml for SAM AWSTemplateFormatVersion: &#39;2010-09-09&#39; Transform: AWS::Serverless-2016-10-31 Description: An AWS Serverless Application that uses the AWS SDK for Python (Boto3) to list the current regions. Resources: MyLambdaFunction: Type: AWS::Serverless::Function Properties: Handler: index.lambda_handler Runtime: python3.8 Policies: AmazonEC2ReadOnlyAccess Events: MyApi: Type: Api Properties: Path: /hello Method: get Deploy the application sam deploy --guided &hellip;
+	
+</div>
+					<a class="readmore" href="/posts/create-a-simple-lambda-function/">Read more ⟶</a>
+				</section>
+				
+				
+
+<ul class="pagination">
+	<span class="page-item page-prev">
+	
+    <a href="/" class="page-link" aria-label="Previous"><span aria-hidden="true">← Prev</span></a>
+	
+	</span>
+	<span class="page-item page-next">
+	
+	</span>
+</ul>
+
+
+			</main>
+			<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/nicktify" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a><a class="soc" href="https://www.linkedin.com/in/nicktify" rel="me" title="LinkedIn"><i data-feather="linkedin"></i></a>
+    <a class="border"></a></div>
+</footer>
+<script>
+  feather.replace()
+</script>
+		</div>
+		
+	</body>
+</html>

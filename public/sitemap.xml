@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/</loc>
+    <lastmod>2024-02-25T00:55:07-03:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2024-02-25T00:55:07-03:00</lastmod>
+  </url><url>
+    <loc>/posts/what-is-aws-sam/</loc>
+    <lastmod>2024-02-25T00:55:07-03:00</lastmod>
+  </url><url>
+    <loc>/about/</loc>
+    <lastmod>2024-02-25T00:44:37-03:00</lastmod>
+  </url><url>
+    <loc>/posts/create-a-simple-state-machine/</loc>
+    <lastmod>2024-02-25T00:25:57-03:00</lastmod>
+  </url><url>
+    <loc>/posts/create-a-simple-lambda-function/</loc>
+    <lastmod>2024-02-25T00:17:23-03:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/tags/</loc>
+  </url>
+</urlset>
