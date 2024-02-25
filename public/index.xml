@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nicolás Aguilar - nicktify</title>
-    <link>/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Nicolás Aguilar - nicktify</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Athul</copyright>
     <lastBuildDate>Sun, 25 Feb 2024 00:55:07 -0300</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Is AWS SAM (Serverless Application Model)?</title>
-      <link>/posts/what-is-aws-sam/</link>
+      <link>http://localhost:1313/posts/what-is-aws-sam/</link>
       <pubDate>Sun, 25 Feb 2024 00:55:07 -0300</pubDate>
-      <guid>/posts/what-is-aws-sam/</guid>
+      <guid>http://localhost:1313/posts/what-is-aws-sam/</guid>
       <description>What Is AWS SAM (Serverless Application Model)? AWS Serverless Application Model (AWS SAM) is an open-source framework for building serverless applications. It provides a simplified way of defining the Amazon API Gateway APIs, AWS Lambda functions, and Amazon DynamoDB tables needed by your serverless application. AWS SAM is based on AWS CloudFormation and extends it by adding a set of high-level constructs for serverless applications.</description>
     </item>
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Sun, 25 Feb 2024 00:44:37 -0300</pubDate>
-      <guid>/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>I am a proactive Full Stack Developer with a strong passion for continuous learning. Currently employed at Capta Hydro, I specialize in constructing cloud solutions on AWS and contributing to the company&amp;rsquo;s growth through the development of robust and scalable software solutions.&#xA;My academic background initially led me to pursue law studies at university in 2019. However, I discovered my true calling lay in software development. Transitioning into this field in late 2020, I embarked on a self-taught journey, harnessing a variety of online learning platforms such as Coursera, edX, Harvard&amp;rsquo;s CS50 MOOC, and Udemy courses.</description>
     </item>
     <item>
       <title>Create a Simple State Machine</title>
-      <link>/posts/create-a-simple-state-machine/</link>
+      <link>http://localhost:1313/posts/create-a-simple-state-machine/</link>
       <pubDate>Sun, 25 Feb 2024 00:25:57 -0300</pubDate>
-      <guid>/posts/create-a-simple-state-machine/</guid>
+      <guid>http://localhost:1313/posts/create-a-simple-state-machine/</guid>
       <description>Create a Simple State Machine { &amp;#34;Comment&amp;#34;: &amp;#34;A simple AWS Step Functions state machine that automates a task&amp;#34;, &amp;#34;StartAt&amp;#34;: &amp;#34;HelloWorld&amp;#34;, &amp;#34;States&amp;#34;: { &amp;#34;HelloWorld&amp;#34;: { &amp;#34;Type&amp;#34;: &amp;#34;Pass&amp;#34;, &amp;#34;Result&amp;#34;: &amp;#34;Hello, World!&amp;#34;, &amp;#34;End&amp;#34;: true } } } Create the template.yaml for SAM AWSTemplateFormatVersion: &amp;#39;2010-09-09&amp;#39; Transform: AWS::Serverless-2016-10-31 Description: An AWS Serverless Application that uses the AWS SDK for Python (Boto3) to list the current regions. Resources: MyStateMachine: Type: AWS::Serverless::StateMachine Properties: DefinitionString: | { &amp;#34;Comment&amp;#34;: &amp;#34;A simple AWS Step Functions state machine that automates a task&amp;#34;, &amp;#34;StartAt&amp;#34;: &amp;#34;HelloWorld&amp;#34;, &amp;#34;States&amp;#34;: { &amp;#34;HelloWorld&amp;#34;: { &amp;#34;Type&amp;#34;: &amp;#34;Pass&amp;#34;, &amp;#34;Result&amp;#34;: &amp;#34;Hello, World!</description>
     </item>
     <item>
       <title>Create a Simple Lambda Function</title>
-      <link>/posts/create-a-simple-lambda-function/</link>
+      <link>http://localhost:1313/posts/create-a-simple-lambda-function/</link>
       <pubDate>Sun, 25 Feb 2024 00:17:23 -0300</pubDate>
-      <guid>/posts/create-a-simple-lambda-function/</guid>
+      <guid>http://localhost:1313/posts/create-a-simple-lambda-function/</guid>
       <description>Create a Lambda Function import json import boto3 def lambda_handler(event, context): # TODO implement return { &amp;#39;statusCode&amp;#39;: 200, &amp;#39;body&amp;#39;: json.dumps(&amp;#39;Hello from Lambda!&amp;#39;) } Create the template.yaml for SAM AWSTemplateFormatVersion: &amp;#39;2010-09-09&amp;#39; Transform: AWS::Serverless-2016-10-31 Description: An AWS Serverless Application that uses the AWS SDK for Python (Boto3) to list the current regions. Resources: MyLambdaFunction: Type: AWS::Serverless::Function Properties: Handler: index.lambda_handler Runtime: python3.8 Policies: AmazonEC2ReadOnlyAccess Events: MyApi: Type: Api Properties: Path: /hello Method: get Deploy the application sam deploy --guided </description>
     </item>
   </channel>
